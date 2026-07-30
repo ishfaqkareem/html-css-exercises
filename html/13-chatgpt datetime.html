@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calendar Form</title>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(135deg, #74ebd5, #9face6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    form {
+        background: white;
+        padding: 25px;
+        border-radius: 12px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        width: 320px;
+    }
+
+    fieldset {
+        border: none;
+    }
+
+    legend {
+        font-size: 22px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: #333;
+    }
+
+    label {
+        display: block;
+        margin-top: 12px;
+        font-weight: 600;
+        color: #444;
+    }
+
+    input[type="date"],
+    input[type="datetime-local"],
+    input[type="time"],
+    input[type="month"],
+    input[type="week"],
+    input[type="range"] {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        outline: none;
+        transition: 0.3s;
+    }
+
+    input:focus {
+        border-color: #6c63ff;
+        box-shadow: 0 0 5px rgba(108,99,255,0.5);
+    }
+
+    input[type="range"] {
+        cursor: pointer;
+    }
+
+    button {
+        width: 48%;
+        padding: 10px;
+        margin-top: 20px;
+        border: none;
+        border-radius: 8px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    button[type="submit"] {
+        background: #6c63ff;
+        color: white;
+    }
+
+    button[type="reset"] {
+        background: #ff4d4d;
+        color: white;
+    }
+
+    button:hover {
+        opacity: 0.85;
+    }
+
+    .btn-group {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+
+</head>
+
+<body>
+
+<form>
+    <fieldset>
+        <legend>Calendar</legend>
+
+        <label>Date:</label>
+        <input type="date">
+
+        <label>Date Time:</label>
+        <input type="datetime-local">
+
+        <label>Time:</label>
+        <input type="time">
+
+        <label>Month:</label>
+        <input type="month">
+
+        <label>Week:</label>
+        <input type="week">
+
+        <label>Range:</label>
+        <input type="range" min="0" max="100" value="47">
+
+        <div class="btn-group">
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+        </div>
+
+    </fieldset>
+</form>
+
+</body>
+</html>
