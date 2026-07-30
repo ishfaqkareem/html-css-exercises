@@ -1,0 +1,111 @@
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box1 {
+            width: 100%;
+            height: 200px;
+            border: 2px black solid;
+            margin-top: 50px;
+            position: relative;
+            overflow: hidden;
+        }
+        .cloud1{
+            width: 200px;
+            height: 120px;
+            position: absolute;
+            top: 20px;
+            left: 0px;
+            animation-name: cloud1;
+            animation-duration: 15s;
+            animation-timing-function: ease-in;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            /* animation: cloud1 5s ease-in 2s infinite normal forwards; */
+
+        }
+        .cloud2{
+            width: 200px;
+            height: 120px;
+            position: absolute;
+            top: 20px;
+            left: 30%;
+            animation-name: cloud2;
+            animation-duration: 20s;
+            animation-timing-function: ease-in;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            /* animation: cloud2 3s ease-in 2s infinite normal forwards; */
+        }
+        .cloud3{
+            width: 200px;
+            height: 120px;
+            position: absolute;
+            top: 20px;
+            right: 10%;
+            animation-name: cloud3;
+            animation-duration: 10s;
+            animation-timing-function: ease-in;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            /* animation: cloud3 5s ease-in 2s infinite normal forwards; */
+        }
+        .sun {
+            width: 100px;
+            height: 100px;
+            /* border: 2px rgb(195, 205, 50) solid; */
+            background-color: yellow;
+            border-radius: 50%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            animation-name: sun;
+            animation-duration: 25s;
+            animation-delay: 1s;
+            animation-iteration-count: infinite;
+            /* color fill hota hy */
+            /* animation-fill-mode: backwards; */
+            /* animation-direction: alternate; */
+            /* animation-direction: alternate-reverse; */
+            animation-timing-function: ease;
+            animation-timing-function: ease-in;
+            animation-timing-function: ease-in-out;
+            animation-timing-function: linear;
+        }
+
+        @keyframes sun {
+            from {
+                left: 0px;
+            }
+
+            to {
+                left: calc(100% - 100px);
+            }
+        }
+        @keyframes cloud1 {
+            from {
+                left: 0%;
+            }
+
+            to {
+                left: 100%;
+            }
+        }
+        @keyframes cloud2 {
+            from {
+                left: 30%;
+            }
+
+            to {
+                left: 100%;
+            }
+        }
+        @keyframes cloud3 {
+            from {
+                right: -200px;
+            }
+
+            to {
+                right: 100%;
+            }
+        }

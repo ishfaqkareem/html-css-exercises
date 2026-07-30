@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add to Card</title>
+    <style>
+        .card{
+            width: 300px;
+            height: 200px;
+            border: 1px solid black;
+            margin: auto;
+            position: relative;
+        }
+        button{
+            width: 100%;
+            height: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            position: absolute;
+            left: 0px;
+            bottom: -33px;
+            opacity: 0;
+            transition: 2s;
+            background-color: black;
+            color: white;
+            font-weight: bold;
+        }
+        .card:hover button{
+            opacity: 1;
+            bottom: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="F:\HTML-CSS-PRACTICE\ASSETS\images\3.jpg" alt="img" width="100%" height="100%">
+        <button>Add To Card</button>
+    </div>
+</body>
+</html>
